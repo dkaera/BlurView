@@ -64,6 +64,7 @@ public class BlurView extends FrameLayout {
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         blurController.setBlurAutoUpdate(false);
+        blurController.destroy();
     }
 
     @Override
